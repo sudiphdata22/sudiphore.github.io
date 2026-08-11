@@ -1,0 +1,22 @@
+# Jekyll configuration for GitHub Pages
+
+# Site settings
+title: Your Site Title
+description: Your site description
+baseurl: ""
+url: "https://sudiphdata22.github.io"
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-minimal
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude files/folders from the build
+exclude:
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
