@@ -1,22 +1,57 @@
-# Jekyll configuration for GitHub Pages
+# Site
+repository: sudiphdata22/sudiphore.github.io
+favicon: assets/img/favicon.ico
+
+# Content settings
+lang: en
+icon: ⚛️
+hide_social: false
+
+# Header
+navbar_fixed: true
+footer_fixed: true
 
 # Site settings
-title: Your Site Title
-description: Your site description
+title: Sudip Hore
+first_name: Sudip
+last_name: Hore
+email: sudip22.official@gmail.com
+description: >
+  Data Science & AI Professional | Building intelligent solutions and scaling high-performing teams
 baseurl: ""
 url: "https://sudiphdata22.github.io"
+last_updated: true
+
+# Social integration
+twitter_username: 
+github_username: sudiphdata22
+linkedin_username: sudiphore
+instagram_username: 
 
 # Build settings
 markdown: kramdown
 remote_theme: alshedivat/al-folio
-
-# Plugins
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+  - jekyll-paginate-v2
+  - jekyll-sitemap
+  - jekyll-email-obfuscate
+  - jemoji
 
-# Exclude files/folders from the build
+# Pagination
+pagination:
+  enabled: true
+  per_page: 8
+  permalink: /blog/page/:num/
+  sort_field: date
+  sort_reverse: true
+
+# Exclude
 exclude:
-  - .gitignore
+  - vendor
   - Gemfile
   - Gemfile.lock
+  - node_modules
+  - _site/
+
+# Other settings
+mask_email: false
